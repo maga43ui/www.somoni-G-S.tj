@@ -46,7 +46,7 @@
             <img src="somoni_entertainment_logo.jpg" alt="SOMONI Entertainment" class="w-40 mx-auto mb-6 rounded-2xl shadow-2xl border border-cyan-500/40">
             <span class="text-xs bg-cyan-500/10 text-cyan-400 border border-cyan-500/20 px-3 py-1.5 rounded-full font-bold uppercase tracking-widest">Истироҳат ва Бозисозӣ</span>
             <h1 class="text-4xl md:text-7xl font-black tracking-tight mt-4 mb-6 uppercase">Оламҳои рақамӣ ва <br><span class="bg-gradient-to-r from-cyan-400 to-indigo-500 bg-clip-text text-transparent">GTA Dushanbe</span></h1>
-            <p class="text-slate-400 text-base md:text-lg mb-8 max-w-xl mx-auto">Лоиҳаҳои ватанӣ, бозиҳои шаҳри кушод ва китобхонаи электронии муосир.</p>
+            <p class="text-slate-400 text-base md:text-lg mb-8 max-w-xl mx-auto">Лоиҳаҳои ватанӣ, бозиҳои шаҳри кушод .</p>
             <div class="flex justify-center gap-4">
                 <a href="#games" class="bg-cyan-500 hover:bg-cyan-400 text-slate-950 font-extrabold px-8 py-3.5 rounded-xl uppercase text-xs tracking-wider transition shadow-lg shadow-cyan-500/20">Дидани бозиҳо</a>
                 <a href="#web-reader" class="bg-slate-900 hover:bg-slate-800 text-slate-200 border border-slate-800 font-extrabold px-8 py-3.5 rounded-xl uppercase text-xs tracking-wider transition">Китобхона</a>
@@ -75,61 +75,10 @@
             </div>
 
             <!-- Map Card -->
-            <div class="bg-slate-900/60 backdrop-blur border border-slate-800 rounded-2xl overflow-hidden hover:border-indigo-500/50 transition group">
-                <div class="h-64 overflow-hidden relative">
-                    <img src="dushanbe_game_map.jpg" alt="Game Map" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                    <div class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur px-3 py-1 rounded text-xs font-bold text-indigo-400 border border-indigo-500/30 uppercase">Game World</div>
-                </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-black uppercase mb-2">Харитаи Бозӣ (Map)</h3>
-                    <p class="text-slate-400 text-sm mb-4">Нақшаи муфассали минтақаҳо, кӯчаҳо ва ноҳияҳои дохили бозӣ бо интерфейси муосир.</p>
-                </div>
-            </div>
-        </div>
+      
     </section>
 
-    <!-- WEB READER SECTION (GitHub PDF Integration) -->
-    <section id="web-reader" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-900/80">
-        <div class="border-l-4 border-emerald-500 pl-4 mb-12 flex items-center justify-between">
-            <div>
-                <h2 class="text-3xl font-black uppercase tracking-wider">SOMONI Smart Reader</h2>
-                <p class="text-slate-400 text-sm mt-1">Китобхонаи рақамӣ — Хондани китобҳо мустақиман аз GitHub</p>
-            </div>
-            <img src="smart_reader_logo.jpg" alt="Smart Reader Logo" class="w-16 h-16 rounded-xl border border-emerald-500/30 object-cover hidden sm:block">
-        </div>
-
-        <div class="bg-slate-900/60 backdrop-blur border border-slate-800 p-6 md:p-8 rounded-2xl shadow-xl">
-            <!-- Рӯйхати китобҳо -->
-            <div class="mb-6">
-                <label class="block text-sm font-bold uppercase text-slate-300 mb-2">Интихоби китоб аз феҳрист:</label>
-                <select id="github-books-select" class="w-full bg-slate-950 border border-slate-700 text-slate-100 rounded-xl p-3.5 text-sm focus:border-emerald-500 focus:outline-none transition">
-                    <option value="">-- Лутфан китобро интихоб кунед --</option>
-                    <!-- Дар ин ҷо линкҳои хоми (Raw links) файлҳои PDF-и худро аз GitHub мемонед -->
-                    <option value="https://raw.githubusercontent.com/maga43ui/www.somoni-G-S.tj/main/books/kitobi1.pdf">Китоби 1 (Мисол)</option>
-                    <option value="https://raw.githubusercontent.com/maga43ui/www.somoni-G-S.tj/main/books/kitobi2.pdf">Китоби 2 (Мисол)</option>
-                </select>
-            </div>
-
-            <!-- Экмани намоиши PDF -->
-            <div id="reader-container" class="bg-slate-950 border border-slate-800/80 rounded-xl min-h-[480px] flex flex-col items-center justify-center relative overflow-hidden p-4">
-                <div id="placeholder-text" class="text-center text-slate-500 text-sm">
-                    <i class="fa-solid fa-book-open text-3xl mb-3 text-slate-600 block"></i>
-                    Китоб ҳангоми интихоб шудан мустақиман аз GitHub бор мешавад.
-                </div>
-                <canvas id="pdf-canvas" class="max-w-full shadow-2xl rounded hidden"></canvas>
-            </div>
-
-            <!-- Тугмаҳои идоракунии саҳифаҳо -->
-            <div id="pdf-controls" class="hidden flex items-center justify-between mt-6 bg-slate-950 p-4 rounded-xl border border-slate-800">
-                <button id="prev-page" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-4 py-2 rounded-lg text-xs uppercase transition flex items-center">
-                    <i class="fa-solid fa-chevron-left mr-1"></i> Қаблӣ
-                </button>
-                <span class="text-sm font-bold text-slate-300">Саҳифа: <span id="page-num">0</span> / <span id="page-count">0</span></span>
-                <button id="next-page" class="bg-slate-800 hover:bg-slate-700 text-white font-bold px-4 py-2 rounded-lg text-xs uppercase transition flex items-center">
-                    Баъдӣ <i class="fa-solid fa-chevron-right ml-1"></i>
-                </button>
-            </div>
-        </div>
+  
     </section>
 
     <!-- FOOTER -->
