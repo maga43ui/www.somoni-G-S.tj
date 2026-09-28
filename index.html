@@ -40,7 +40,7 @@
         .font-rajdhani { font-family: 'Rajdhani', sans-serif; }
     </style>
 </head>
-<body class="bg-slate-950 text-slate-100 font-rajdhani antialiased selection:bg-cyan-500 selection:text-black relative">
+<body class="bg-slate-950 text-slate-100 font-rajdhani antialiased selection:bg-cyan-500 selection:text-black relative overflow-x-hidden">
 
     <!-- BAKEROUND -->
     <div class="fixed inset-0 -z-50 pointer-events-none">
@@ -49,50 +49,49 @@
     </div>
 
     <!-- NAVIGATION BAR -->
-    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/85 backdrop-blur-md border-b border-slate-900 px-6 py-4">
+    <nav class="fixed top-0 left-0 right-0 z-50 bg-slate-950/85 backdrop-blur-md border-b border-slate-900 px-4 md:px-6 py-4">
         <div class="max-w-7xl mx-auto flex items-center justify-between">
-            <a href="#hero" class="flex items-center space-x-3 group">
-                <img src="somoni_entertainment_logo.jpg" alt="Logo" class="w-11 h-11 rounded-lg border border-cyan-500/40 object-cover group-hover:border-cyan-400 transition duration-300">
-                <span class="font-orbitron font-black text-xl tracking-wider uppercase bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent">
+            <a href="#hero" class="flex items-center space-x-2 md:space-x-3 group">
+                <img src="somoni_entertainment_logo.jpg" alt="Logo" class="w-9 h-9 md:w-11 md:h-11 rounded-lg border border-cyan-500/40 object-cover group-hover:border-cyan-400 transition duration-300">
+                <span class="font-orbitron font-black text-sm md:text-xl tracking-wider uppercase bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-400 bg-clip-text text-transparent">
                     SOMONI ENTERTAINMENT
                 </span>
             </a>
-            <div class="hidden md:flex space-x-8 text-sm font-bold uppercase tracking-widest text-slate-300 font-orbitron">
-                <a href="#hero" class="hover:text-cyan-400 transition">Асосӣ</a>
+            <div class="flex space-x-4 md:space-x-8 text-xs md:text-sm font-bold uppercase tracking-widest text-slate-300 font-orbitron">
                 <a href="#games" class="hover:text-cyan-400 transition">Бозиҳо</a>
-                <a href="#apps" class="text-cyan-400 hover:text-cyan-300 transition">Барномаҳо (Apps)</a>
+                <a href="#apps" class="text-cyan-400 hover:text-cyan-300 transition">Барномаҳо</a>
             </div>
         </div>
     </nav>
 
     <!-- HERO SECTION -->
-    <section id="hero" class="relative min-h-[90vh] flex items-center justify-center pt-28 px-6 overflow-hidden">
+    <section id="hero" class="relative min-h-[90vh] flex items-center justify-center pt-32 pb-16 px-4 md:px-6 overflow-hidden">
         <div class="absolute inset-0 -z-10">
             <img src="gta_dushanbe_main.jpg" alt="Hero" class="w-full h-full object-cover opacity-30 scale-105">
             <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/60 to-transparent"></div>
         </div>
         
-        <div class="max-w-5xl mx-auto text-center relative z-10">
-            <img src="somoni_entertainment_logo.jpg" alt="SOMONI Entertainment" class="w-40 mx-auto mb-6 rounded-2xl shadow-2xl border border-cyan-500/40 shadow-cyan-500/10">
+        <div class="max-w-5xl mx-auto text-center relative z-10 w-full">
+            <img src="somoni_entertainment_logo.jpg" alt="SOMONI Entertainment" class="w-32 md:w-40 mx-auto mb-6 rounded-2xl shadow-2xl border border-cyan-500/40 shadow-cyan-500/10 object-cover">
             
-            <span class="text-xs md:text-sm bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 px-4 py-2 rounded-full font-orbitron font-bold uppercase tracking-widest shadow-lg">
+            <span class="inline-block text-[10px] md:text-sm bg-cyan-500/10 text-cyan-400 border border-cyan-500/30 px-3 md:px-4 py-2 rounded-full font-orbitron font-bold uppercase tracking-widest shadow-lg">
                 №1 Студияи Бозисозӣ ва Барномасозӣ дар Тоҷикистон
             </span>
 
-            <h1 class="text-3xl md:text-6xl font-orbitron font-black tracking-tight mt-6 mb-6 uppercase leading-tight">
+            <h1 class="text-2xl md:text-6xl font-orbitron font-black tracking-tight mt-6 mb-6 uppercase leading-snug md:leading-tight">
                 Game Dev ва <br>
                 <span class="bg-gradient-to-r from-cyan-400 via-sky-300 to-indigo-500 bg-clip-text text-transparent">Барномаҳои Муосир</span>
             </h1>
 
-            <p class="text-slate-400 text-base md:text-xl mb-8 max-w-2xl mx-auto font-medium">
+            <p class="text-slate-400 text-sm md:text-xl mb-8 max-w-2xl mx-auto font-medium px-2">
                 Лоиҳаҳои барҷастаи ватанӣ, харитаҳои 3D ва абзорҳои интеллектуалии корӣ.
             </p>
 
-            <div class="flex justify-center gap-4">
-                <a href="#apps" class="font-orbitron bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-black px-8 py-3.5 rounded-xl uppercase text-xs tracking-widest transition shadow-lg shadow-cyan-500/25">
+            <div class="flex flex-col sm:flex-row justify-center gap-4 px-4">
+                <a href="#apps" class="font-orbitron bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-black px-6 md:px-8 py-3.5 rounded-xl uppercase text-xs tracking-widest transition shadow-lg shadow-cyan-500/25 text-center">
                     Барномаҳо (Apps)
                 </a>
-                <a href="#games" class="font-orbitron bg-slate-900 border border-slate-700 hover:border-cyan-500 text-slate-200 font-bold px-8 py-3.5 rounded-xl uppercase text-xs tracking-widest transition">
+                <a href="#games" class="font-orbitron bg-slate-900 border border-slate-700 hover:border-cyan-500 text-slate-200 font-bold px-6 md:px-8 py-3.5 rounded-xl uppercase text-xs tracking-widest transition text-center">
                     Бозиҳо
                 </a>
             </div>
@@ -100,62 +99,64 @@
     </section>
 
     <!-- GAMES & MAP SECTION -->
-    <section id="games" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="border-l-4 border-cyan-500 pl-4 mb-12">
-            <h2 class="text-3xl font-orbitron font-black uppercase tracking-wider">Бозиҳо / Games</h2>
-            <p class="text-slate-400 text-sm mt-1">Лоиҳаҳои асосии студия бо муҳити воқеӣ</p>
+    <section id="games" class="py-16 md:py-24 px-4 md:px-6 max-w-7xl mx-auto">
+        <div class="border-l-4 border-cyan-500 pl-4 mb-8 md:mb-12">
+            <h2 class="text-2xl md:text-3xl font-orbitron font-black uppercase tracking-wider">Бозиҳо / Games</h2>
+            <p class="text-slate-400 text-xs md:text-sm mt-1">Лоиҳаҳои асосии студия бо муҳити воқеӣ</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid md:grid-cols-2 gap-6 md:gap-8">
+            <!-- GTA Dushanbe -->
             <div class="bg-slate-900/60 backdrop-blur border border-slate-800 rounded-2xl overflow-hidden hover:border-cyan-500/50 transition duration-300 group">
-                <div class="h-64 overflow-hidden relative">
+                <div class="h-52 md:h-64 overflow-hidden relative">
                     <img src="gta_dushanbe_main.jpg" alt="GTA Dushanbe" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur px-3 py-1 rounded text-xs font-orbitron font-bold text-cyan-400 border border-cyan-500/30 uppercase">Open World</div>
                 </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-orbitron font-black uppercase mb-2">GTA Dushanbe</h3>
-                    <p class="text-slate-400 text-sm mb-4">Бозии шаҳри кушод, ки пойтахти Тоҷикистонро бо тамоми ҷузъиёт инъикос мекунад.</p>
+                <div class="p-5 md:p-6">
+                    <h3 class="text-xl md:text-2xl font-orbitron font-black uppercase mb-2">GTA Dushanbe</h3>
+                    <p class="text-slate-400 text-xs md:text-sm mb-4">Бозии шаҳри кушод, ки пойтахти Тоҷикистонро бо тамоми ҷузъиёт инъикос мекунад.</p>
                 </div>
             </div>
 
+            <!-- Map Card -->
             <div class="bg-slate-900/60 backdrop-blur border border-slate-800 rounded-2xl overflow-hidden hover:border-indigo-500/50 transition duration-300 group">
-                <div class="h-64 overflow-hidden relative">
+                <div class="h-52 md:h-64 overflow-hidden relative">
                     <img src="dushanbe_game_map.jpg" alt="Game Map" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     <div class="absolute top-4 left-4 bg-slate-950/80 backdrop-blur px-3 py-1 rounded text-xs font-orbitron font-bold text-indigo-400 border border-indigo-500/30 uppercase">Game World</div>
                 </div>
-                <div class="p-6">
-                    <h3 class="text-2xl font-orbitron font-black uppercase mb-2">Харитаи Бозӣ (Map)</h3>
-                    <p class="text-slate-400 text-sm mb-4">Нақшаи муфассали минтақаҳо, кӯчаҳо ва ноҳияҳои дохили бозӣ.</p>
+                <div class="p-5 md:p-6">
+                    <h3 class="text-xl md:text-2xl font-orbitron font-black uppercase mb-2">Харитаи Бозӣ (Map)</h3>
+                    <p class="text-slate-400 text-xs md:text-sm mb-4">Нақшаи муфассали минтақаҳо, кӯчаҳо ва ноҳияҳои дохили бозӣ.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- APPS SECTION (РАЗДЕЛИ БАРНОМАҲО) -->
-    <section id="apps" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-900">
-        <div class="border-l-4 border-indigo-500 pl-4 mb-12">
-            <h2 class="text-3xl font-orbitron font-black uppercase tracking-wider">Барномаҳо / Desktop Applications</h2>
-            <p class="text-slate-400 text-sm mt-1">Барномаҳои расмии компютерӣ барои Windows</p>
+    <section id="apps" class="py-16 md:py-24 px-4 md:px-6 max-w-7xl mx-auto border-t border-slate-900">
+        <div class="border-l-4 border-indigo-500 pl-4 mb-8 md:mb-12">
+            <h2 class="text-2xl md:text-3xl font-orbitron font-black uppercase tracking-wider">Барномаҳо / Desktop Apps</h2>
+            <p class="text-slate-400 text-xs md:text-sm mt-1">Барномаҳои расмии компютерӣ барои Windows</p>
         </div>
 
         <div class="grid md:grid-cols-1 max-w-2xl mx-auto">
             <!-- Somoni Smart Reader Card -->
-            <div class="bg-slate-900/80 backdrop-blur border border-slate-800 rounded-2xl p-8 hover:border-indigo-500 transition duration-300 shadow-2xl flex flex-col md:flex-row items-center gap-6">
+            <div class="bg-slate-900/80 backdrop-blur border border-slate-800 rounded-2xl p-6 md:p-8 hover:border-indigo-500 transition duration-300 shadow-2xl flex flex-col md:flex-row items-center gap-6">
                 <!-- App Icon -->
-                <div class="w-28 h-28 shrink-0 bg-slate-950 rounded-2xl border border-slate-700 flex items-center justify-center p-3 shadow-inner">
+                <div class="w-24 h-24 md:w-28 md:h-28 shrink-0 bg-slate-950 rounded-2xl border border-slate-700 flex items-center justify-center p-3 shadow-inner">
                     <img src="app_icon.ico" alt="Somoni Smart Reader Icon" class="w-full h-full object-contain drop-shadow-md">
                 </div>
                 
                 <!-- App Details -->
-                <div class="flex-1 text-center md:text-left">
-                    <div class="flex items-center justify-center md:justify-start gap-3 mb-2">
-                        <h3 class="text-2xl font-orbitron font-black uppercase text-cyan-400">Somoni Smart Reader</h3>
+                <div class="flex-1 text-center md:text-left w-full">
+                    <div class="flex flex-wrap items-center justify-center md:justify-start gap-2 md:gap-3 mb-2">
+                        <h3 class="text-xl md:text-2xl font-orbitron font-black uppercase text-cyan-400">Somoni Smart Reader</h3>
                         <span class="text-xs bg-indigo-500/20 text-indigo-300 border border-indigo-500/40 px-2.5 py-1 rounded-full font-bold">v1.0</span>
                     </div>
-                    <p class="text-slate-400 text-sm mb-6">
+                    <p class="text-slate-400 text-xs md:text-sm mb-6">
                         Барномаи муосири хониши китобҳои PDF, идоракунии ҳисоботҳо ва пайвастшавӣ ба пойгоҳи абрӣ бо интерфейси зебои SVG.
                     </p>
-                    <a href="https://drive.google.com/file/d/1yKqqwhM7asQ9xxjd_ukrQhNQgvWBqrVe/view?usp=drivesdk" target="_blank" class="inline-flex items-center justify-center gap-2 font-orbitron bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-black px-6 py-3 rounded-xl uppercase text-xs tracking-widest transition shadow-lg shadow-cyan-500/20">
+                    <a href="https://drive.google.com/file/d/1yKqqwhM7asQ9xxjd_ukrQhNQgvWBqrVe/view?usp=drivesdk" target="_blank" class="w-full md:w-auto inline-flex items-center justify-center gap-2 font-orbitron bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 text-slate-950 font-black px-6 py-3 rounded-xl uppercase text-xs tracking-widest transition shadow-lg shadow-cyan-500/20 text-center">
                         <i class="fa-solid fa-download"></i> Зеркашӣ барои Windows (.exe)
                     </a>
                 </div>
@@ -164,16 +165,16 @@
     </section>
 
     <!-- FOOTER -->
-    <footer class="border-t border-slate-900 py-12 px-6 bg-slate-950 text-center">
+    <footer class="border-t border-slate-900 py-12 px-4 md:px-6 bg-slate-950 text-center">
         <div class="max-w-7xl mx-auto flex flex-col items-center justify-center space-y-6">
             
             <!-- Иконка ва Тугмаи Instagram -->
-            <a href="https://instagram.com/somoni.entertainment" target="_blank" class="inline-flex items-center space-x-3 bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-90 text-white px-8 py-4 rounded-2xl shadow-xl shadow-pink-500/20 transition duration-300 transform hover:scale-105 border border-pink-400/30">
-                <i class="fa-brands fa-instagram text-2xl"></i>
-                <span class="font-orbitron font-black uppercase text-sm tracking-widest">Моро дар Instagram пайгирӣ кунед: @somoni.entertainment</span>
+            <a href="https://instagram.com/somoni.entertainment" target="_blank" class="w-full sm:w-auto inline-flex items-center justify-center space-x-3 bg-gradient-to-r from-purple-600 via-pink-600 to-amber-500 hover:opacity-90 text-white px-6 md:px-8 py-4 rounded-2xl shadow-xl shadow-pink-500/20 transition duration-300 transform hover:scale-105 border border-pink-400/30 text-center">
+                <i class="fa-brands fa-instagram text-xl md:text-2xl"></i>
+                <span class="font-orbitron font-black uppercase text-xs md:text-sm tracking-widest">@somoni.entertainment</span>
             </a>
 
-            <p class="text-slate-500 text-xs font-orbitron uppercase tracking-widest mt-4">
+            <p class="text-slate-500 text-[10px] md:text-xs font-orbitron uppercase tracking-widest mt-4">
                 &copy; 2026 SOMONI Entertainment. Ҳамаи ҳуқуқҳо ҳифз шудаанд.
             </p>
         </div>
